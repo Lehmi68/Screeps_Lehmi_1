@@ -7,8 +7,8 @@
 
 var roleBuilder = 
 {
-    /** @param {Creep} creep **/
-    run: function(creep) 
+	/** @param {Creep} creep **/
+	run: function(creep) 
 	{
 		//console.log('Modul roleBuilder Start');
 		var sources = creep.room.find(FIND_SOURCES);
@@ -26,7 +26,6 @@ var roleBuilder =
 				creep.memory.building = true;
 				creep.say('Building');
 			}
-
 			if(creep.memory.building) 
 			{
 				if(targets.length) 
@@ -39,7 +38,6 @@ var roleBuilder =
 			}
 			else 
 			{
-				
 				if(creep.harvest(sources[0]) == ERR_NOT_IN_RANGE) 
 				{
 					creep.moveTo(sources[0]);
