@@ -5,11 +5,10 @@
  Angriff des nächsten Zieles
 */
 
- var roleGuard = 
- {
-
-    /** @param {Creep} creep **/
-    run: function(creep) 
+var roleGuard = 
+{
+	/** @param {Creep} creep **/
+	run: function(creep) 
 	{
 		//console.log('Modul roleGuard Start');
 		var targets = creep.pos.findClosestByRange(FIND_HOSTILE_CREEPS); // Findet das naheste Ziel und greift an
@@ -19,7 +18,6 @@
 			console.log('Attack Target: ' + targets);
 			if(targets && creep.hits > (creep.hitsMax * 0.01)) // Atack bis nur noch 50% Hitpoints übrig
 			{
-		
 				creep.moveTo(targets);
 				if (creep.memory.role == 'Atacker')
 				{
@@ -35,7 +33,6 @@
 		{
 			creep.moveTo(Game.flags.GuardFlag1); // Kein 
 		}
-		
 	}
 };
 module.exports = roleGuard;
