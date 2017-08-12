@@ -7,33 +7,30 @@
  * mod.thing == 'a thing'; // true
  */
 
-var roleHealer = 
- {
-
+var roleHealer =
+{
     /** @param {Creep} creep **/
-    run: function(creep) 
-	{
-		//console.log('Modul roleHealer Start');
-		//var targets = creep.room.find(FIND_HOSTILE_CREEPS); // Funktioniert
-		var damagedCreep = creep.pos.findClosestByRange(FIND_MY_CREEPS, {filter: function(object) {return object.hits < (object.hitsMax - 5);}});
-		//console.log('damagedCreep = ' + damagedCreep);
-		
-		if (damagedCreep) //Ein vrletzter Creep wurde gefunden
-		{
-			if(damagedCreep && creep.hits <= creep.hitsMax) // Heal bis volle Gesundheit
-			{
-				console.log('Healing : ' + damagedCreep);
+    run: function(creep)
+    {
+	    //console.log('Modul roleHealer Start');
+	    //var targets = creep.room.find(FIND_HOSTILE_CREEPS); // Funktioniert
+	    var damagedCreep = creep.pos.findClosestByRange(FIND_MY_CREEPS, {filter: function(object) {return object.hits < (object.hitsMax - 5);}});
+	    //console.log('damagedCreep = ' + damagedCreep);
+	    if (damagedCreep) //Ein vrletzter Creep wurde gefunden
+	    {
+		    if(damagedCreep && creep.hits <= creep.hitsMax) // Heal bis volle Gesundheit
+		    {
+			    console.log('Healing : ' + damagedCreep);
 			    creep.moveTo(damagedCreep);
-    	        creep.heal(damagedCreep);	
-			}
-		}
-		else // kein Ziel fuer Angriff gefungen Move to Flag GuardFlag1
-		{
-			//creep.moveTo(Game.spawns.Spawn1);
-			creep.moveTo(Game.flags.GuardFlag1); // Kein 
-		}
-		
-	}
+			    creep.heal(damagedCreep);	
+		    }
+	    }
+	    else // kein Ziel fuer Angriff gefungen Move to Flag GuardFlag1
+	    {
+		    //creep.moveTo(Game.spawns.Spawn1);
+		    creep.moveTo(Game.flags.GuardFlag1); // Kein 
+	    }
+    }
 };
 module.exports = roleHealer;
     
