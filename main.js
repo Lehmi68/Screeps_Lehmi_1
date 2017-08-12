@@ -6,7 +6,7 @@
 // Memory.countUpgraderExist;  wie viele creeps vom Typ  Upgrader sind vorhanden
 // Memory.countRepairerExist;  wie viele creeps vom Typ  Repairer sind vorhanden
 // Memory.summeWorkerExist  wie viele Worker sind vorhanden (also Harvester, Builder, Upgrader, Healer)
-// 1. Spawn point : Spawn1
+// 1. Spawn point : LEH1
 // Flagge: GuardFlag1
 // Flagge: WorkerFlag
 
