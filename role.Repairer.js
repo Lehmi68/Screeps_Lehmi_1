@@ -54,7 +54,7 @@ var roleRepairer =
 			}
 			else // Es gibt kein zu konstruierendes Objekt Creep auf freeWorker setzen
 			{
-				console.log('Creep: ' + name + ' No more Repair needed. Set Harvester free.');
+				console.log('Creep: ' + creep.name + ' No more Repair needed. Set Harvester free.');
 				creep.say('freeWorker');
 				creep.memory.role = 'freeWorker'
 			}	
