@@ -37,7 +37,7 @@ run(creep)
 		var targets = creep.room.find(FIND_STRUCTURES, {filter: object => object.hits < (object.hitsMax * 0.5)});
 		//var targets = creep.room.find(FIND_STRUCTURES, {filter: object => object.hits < (object.hitsMax*0.95)});
 		//console.log('Target fuer ConstructionSites gefunden: ' + creep.room.find(FIND_CONSTRUCTION_SITES));
-		console.log('Object.hitsmax = ' + targets.object.hitsMax);
+		//console.log('Object.hitsmax = ' + targets.object.hitsMax);
 		if (targets.length > 0) //Es gibt ein zu konstruierendes Objekt
 		{
 			if(!creep.memory.building && creep.carry.energy == creep.carryCapacity) 
