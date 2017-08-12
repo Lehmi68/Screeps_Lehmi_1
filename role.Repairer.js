@@ -11,7 +11,7 @@
 */
 
 
-modul.roleRepairer = 
+module.roleRepairer = 
 {
 /** @param {Creep} creep **/
 run(creep) 
