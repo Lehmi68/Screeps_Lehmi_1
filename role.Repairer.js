@@ -45,13 +45,13 @@ var roleRepairer =
 				if(creep.memory.building) 
 				{
 					if(targets.length) 
-				{
-					if(creep.repair(targets[0]) == ERR_NOT_IN_RANGE) 
 					{
-						creep.moveTo(targets[0]);
+						if(creep.repair(targets[0]) == ERR_NOT_IN_RANGE) 
+						{
+							creep.moveTo(targets[0]);
+						}
 					}
 				}
-			}
 			else // Es gibt kein zu konstruierendes Objekt Creep auf freeWorker setzen
 			{
 				console.log('Creep: ' + name + ' No more Repair needed. Set Harvester free.');
