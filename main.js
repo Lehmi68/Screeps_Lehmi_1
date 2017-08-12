@@ -11,7 +11,7 @@
 // Flagge: WorkerFlag
 
 //console.log('Define Memory Variablen');
-Memory.SetMinWorker = 2; //Anzahl Minimaler Worker
+Memory.SetMinWorker = 3; //Anzahl Minimaler Worker
 Memory.SetMinUpgrader = 3; //Anzahl Minimaler Worker
 Memory.SetMinAtacker = 1; //Anzahl Minimaler Atacker
 Memory.SetMinRangeAtacker = 1; //Anzahl Minimaler Range Atacker
