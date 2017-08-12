@@ -9,10 +9,10 @@
  ausserden wird die struktur nich voll repariert.
  
 */
-module.exports =
+var roleRepairer =
 {
 /** @param {Creep} creep **/
-run(creep) 
+run: function(creep) 
 {
 	console.log('Modul roleRepairer Start');
 	
@@ -61,4 +61,4 @@ run(creep)
 		}	
 	}
 };
-//module.exports = roleRepairer;
+module.exports = roleRepairer;
