@@ -3,7 +3,7 @@
  Paramteruebergabe: keine
  Rueckgabe: keine
  Bei Spielbeginn gibt es noch keine creeps.
- Damit die weiteren Funktionen nich auf leeres Memeory zugreigen wird immer
+ Damit die weiteren Funktionen nich auf leeres Memeory zugreifen wird immer
  dann ein creep gespornt wenn keiner mehr in der map vorhanden ist
  */
 
