@@ -9,9 +9,7 @@
  ausserden wird die struktur nich voll repariert.
  
 */
-
-
-module.roleRepairer = 
+module.exports =
 {
 /** @param {Creep} creep **/
 run(creep) 
@@ -50,10 +48,10 @@ run(creep)
 				if(targets.length) 
 				{
 					if(creep.repair(targets[0]) == ERR_NOT_IN_RANGE) 
-				{
-					creep.moveTo(targets[0]);
+					{
+						creep.moveTo(targets[0]);
+					}
 				}
-			}
 		}
 		else // Es gibt kein zu konstruierendes Objekt Creep auf freeWorker setzen
 		{
