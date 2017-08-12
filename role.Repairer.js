@@ -50,6 +50,7 @@ var roleRepairer =
 							creep.moveTo(targets[0]);
 						}
 					}
+				}
 			}
 			else // Es gibt kein zu konstruierendes Objekt Creep auf freeWorker setzen
 			}
