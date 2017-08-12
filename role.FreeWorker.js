@@ -9,13 +9,13 @@
  */
 
  
- var roleFreeWorker = 
- {
-    /** @param {Creep} creep **/
-    run: function(creep) 
+ var roleFreeWorker =
+{
+	/** @param {Creep} creep **/
+    run: function(creep)
 	{
 		//console.log('Modul rolefreeWorker Start');
 		creep.moveTo(Game.flags.WorkerFlag); // Freie Worker an WorkerFlag sammeln
-    }
+	}
 };
 module.exports = roleFreeWorker;
